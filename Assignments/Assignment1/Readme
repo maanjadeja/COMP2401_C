@@ -1,0 +1,15 @@
+Name: Maansinh Jadeja
+Student Number: 101157121
+Source Files: covidOttawa.c gears.c
+Compile and Run Instructions:
+                              For gears.c
+                              1. Open gnome-terminal
+                              2. Go to the directory containing the source files
+                              3. type: "gcc -Wall -o gears gears.c"  to check for any errors
+                              4. type: "./gears" to run the program gears
+
+                              For covidOttawa.c
+                              1. Open gnome-terminal
+                              2. Go to the directory containing the source files
+                              3. type: "gcc -Wall -o covidOttawa covidOttawa.c"  to check for any errors
+                              4. type: "./covidOttawa" to run the program covidOttawa

@@ -1,0 +1,15 @@
+Name: Maansinh Jadeja
+Student Number: 101157121
+Source Files: bitAdder.c nounFinder.c
+Compile and Run Instructions:
+                              For bitAdder.c
+                              1. Open gnome-terminal
+                              2. Go to the directory containing the source files
+                              3. type: "gcc -Wall -o bitAdder bitAdder.c"  to check for any errors
+                              4. type: "./bitAdder" to run the program bitAdder
+
+                              For nounFinder.c
+                              1. Open gnome-terminal
+                              2. Go to the directory containing the source files
+                              3. type: "gcc -Wall -o nounFinder nounFinder.c"  to check for any errors
+                              4. type: "./nounFinder" to run the program nounFinder

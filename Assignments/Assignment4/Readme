@@ -1,0 +1,12 @@
+Name: Maansinh Jadeja
+Student Number: 101157121
+Source Files: display.c rrtMaker.c rrtTester.c
+Header Files: display.h obstacles.h
+
+Compile and Run Instructions:
+                              1. Open gnome-terminal
+                              2. Go to the directory containing the source files
+                              3. type: "make"  to create output file
+                              4. type: "./rrtTester" to run the program rrtTester
+
+                          

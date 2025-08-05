@@ -1,0 +1,94 @@
+int guestAttemptsToGoOnRide(Guest* theGuest, Ride* theRide){
+
+  if((theGuest->heightInCm >= theRide->heightRequirementInCm) && ((theGuest->allDayRidePassOnGuest==1) || (theGuest->totalNumberOfTicketsOnGuest >= theRide->numberOfTicketsRequired))){
+
+    printf("GUEST HAS SUCCESSFULY BEEN ABLE TO GET ON THE RIDE! \n");
+    if(theGuest->allDayRidePassOnGuest==0){
+
+      theGuest->totalNumberOfTicketsOnGuest-=theRide->numberOfTicketsRequired;
+      theRide->totalNumberOfRiders++;
+
+
+    }
+
+
+
+  }
+  else{
+
+    printf("GUEST WAS NOT SUCCESSFUL IN BEING ABLE TO GET ON THE RIDE! \n");
+
+    theRide->numberOfGuestsDeniedForHeightRequirement++;
+
+
+
+  }
+
+
+
+}
+
+------------------------------------------------------------------------------ORIGINAL GUEST ATTEMPTS TO GO ON RIDE FUNCITON BELOW
+
+int guestAttemptsToGoOnRide(Guest* theGuest, Ride* theRide){
+
+  if((theGuest->heightInCm >= theRide->heightRequirementInCm)){
+
+    printf("THE GUEST IS PERMITTED TO GET ONTO THE RIDE BECAUSE THEIR HEIGHT IS %d cm AND THE HEIGHT REQUIREMENT FOR THE RIDE IS %d cm\n",theGuest->heightInCm,theRide->heightRequirementInCm);
+    printf("\n");
+
+
+    if(theGuest->allDayRidePassOnGuest==1){
+      printf("GUEST IS SUCCESSFUL IN BEING ABLE TO GET ON THE RIDE BECAUSE THEIR ALL DAY RIDE PASS VALUE IS %d ",theGuest->allDayRidePassOnGuest);
+      printf("THE RIDE THE GUEST GOT ON WAS CALLED %s ",theRide->rideName);
+      printf("THE GUEST THAT GOT ON THAT RIDE IS %d YEARS OLD\n",theGuest->age);
+
+      printf("\n");
+
+      theRide->totalNumberOfRiders++;
+      return 1;
+
+    }
+
+    else if(theGuest->totalNumberOfTicketsOnGuest>=theRide->numberOfTicketsRequired){
+
+      printf("GUEST IS SUCCESSFUL IN BEING ABLE TO GET ON THE RIDE BECAUSE THEY HAVE A TOTAL OF %d TICKETS AND THE RIDE REQUIRES %d TICKETS ",theGuest->totalNumberOfTicketsOnGuest,theRide->numberOfTicketsRequired);
+      printf("THE RIDE THE GUEST GOT ON WAS CALLED %s ",theRide->rideName);
+      printf("THE GUEST THAT GOT ON THAT RIDE IS %d YEARS OLD\n",theGuest->age);
+
+      printf("\n");
+
+      theGuest->totalNumberOfTicketsOnGuest-=theRide->numberOfTicketsRequired;
+      theRide->totalNumberOfRiders++;
+      return 1;
+
+    }
+    else{
+
+      printf("THE GUEST IS UNABLE TO GET ONTO THE RIDE BECAUSE THEIR ALL DAY RIDE PASS VALUE IS %d AND THE TOTAL NUMBER OF TICKETS ON THE GUEST IS %d AND THE RIDE REQUIRES %d TICKETS\n",theGuest->allDayRidePassOnGuest,theGuest->totalNumberOfTicketsOnGuest,theRide->numberOfTicketsRequired);
+      printf("\n");
+
+      return 0;
+
+    }
+
+
+  }
+  else{
+
+    printf("GUEST WAS NOT SUCCESSFUL IN BEING ABLE TO GET ON THE RIDE BECAUSE THEIR HEIGHT IS %d cm AND THE HEIGHT REQUIREMENT FOR THE RIDE IS %d cm! \n",theGuest->heightInCm,theRide->heightRequirementInCm);
+    printf("\n");
+
+
+    theRide->numberOfGuestsDeniedForHeightRequirement++;
+    return 0;
+
+
+
+
+  }
+
+
+
+
+}
