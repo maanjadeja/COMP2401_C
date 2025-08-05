@@ -1,0 +1,5 @@
+Name: Maansinh Jadeja
+Student Number: 101157121
+Source Files: hello.c tw1.c tw2.c tw3.c tw4.c
+Compilation and Run Instructions: COMPILE -> gcc -o (EXECUTABLE NAME) (SOURCE FILE)
+                                  RUN FILE -> ./(EXECUTABLE NAME) [make sure you are in the same directory as the executable file]

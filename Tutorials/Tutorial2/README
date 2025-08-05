@@ -1,0 +1,5 @@
+Name: Maansinh Jadeja
+Student Number: 101157121
+Source Files: printTriangles.c
+Compile and Run Instructions: COMPILE-> gcc -o printTriangles printTriangles.c
+                              RUN -> ./printTriangles
