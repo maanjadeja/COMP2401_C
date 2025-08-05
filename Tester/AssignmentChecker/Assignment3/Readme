@@ -1,0 +1,15 @@
+Name: Maansinh Jadeja
+Student Number: 101157121
+Source Files: fairSimulator.c modifiedFairSimulator.c
+Compile and Run Instructions:
+                              For fairSimulator.c
+                              1. Open gnome-terminal
+                              2. Go to the directory containing the source files
+                              3. type: "gcc -Wall -o fairSimulator fairSimulator.c"  to check for any errors
+                              4. type: "./fairSimulator" to run the program fairSimulator
+
+                              For modifiedFairSimulator.c
+                              1. Open gnome-terminal
+                              2. Go to the directory containing the source files
+                              3. type: "gcc -Wall -o modifiedFairSimulator modifiedFairSimulator.c"  to check for any errors
+                              4. type: "./modifiedFairSimulator" to run the program modifiedFairSimulator
